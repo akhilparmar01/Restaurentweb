@@ -1,9 +1,12 @@
 {
+  "homepage": "https://akhilparmar01.github.io/reaactlivecourse",
   "name": "react_js",
   "version": "1.0.0",
   "description": "",
   "source": "/src/index.html",
   "scripts": {
+      "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "parcel",
     "build": "parcel build"
   },
@@ -11,6 +14,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel": "^2.8.3",
     "process": "^0.11.10"
   },
