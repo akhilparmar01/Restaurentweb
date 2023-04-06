@@ -22,7 +22,9 @@ key:"h2",
 const heading2=<h1 id="title" key="h2">Namstey React</h1>
 
 
-
+const HeaderComponenent = () =>{
+    return <h1>Namate React Functional Componenent</h1>
+};
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
