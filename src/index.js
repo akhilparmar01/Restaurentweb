@@ -10,32 +10,29 @@ import ReactDOM from "react-dom/client";
 </ul>
 </div> */
 
-const heading =React.createElement(
-    "h1",
-    {
-id:"title",
-key:"h2",
-    },
-    "Namsatey React",
-
+const title =(
+    <h1 id="title" key="h2">
+Namstey Hero
+    </h1>
 );
-const heading2=<h1 id="title" key="h2">Namstey React</h1>
 
 
-const HeaderComponenent = () =>{
-    return <h1>Namate React Functional Componenent</h1>
+// cpmposing component
+const HeaderComponent  =  () => {
+    return(
+         <div>
+         
+     {title}
+         <h1>Nmaste React function componrent</h1>
+    <h2>How are you my friend</h2>
+    </div>
+    );
 };
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// passing the element inside the the root 
-
-// async defer
-root.render(heading);
-
-
 // ReactDom.render(<h1>Hellow World!!</h1>,document.getElementById("root"));
 
-
+root.render(<HeaderComponent />);
 
 
